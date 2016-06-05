@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="90" id="KGk-i7-Jjw" customClass="UserTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbS-hf-32K">
+                        <rect key="frame" x="0.0" y="-1" width="91" height="90"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4SN-kO-84W">
+                                <rect key="frame" x="5" y="5" width="81" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="5NS-bi-LQe"/>
+                                    <constraint firstAttribute="width" constant="81" id="7lv-K6-QSh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4SN-kO-84W" secondAttribute="centerX" id="KBp-Sd-kpo"/>
+                            <constraint firstAttribute="centerY" secondItem="4SN-kO-84W" secondAttribute="centerY" id="Wcz-r1-mgJ"/>
+                            <constraint firstAttribute="width" constant="91" id="dYW-uo-KJc"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emailAddress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1R-tR-Uaw">
+                        <rect key="frame" x="97" y="50" width="188" height="13"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Name Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLP-aM-1bS">
+                        <rect key="frame" x="97" y="26" width="188" height="21"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nm-RN-CSk">
+                        <rect key="frame" x="0.0" y="-1" width="320" height="90"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="CellPress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zua-f0-ncp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pbS-hf-32K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="5aL-aL-Kcr"/>
+                    <constraint firstItem="fLP-aM-1bS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="AyF-Ni-qrF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3Nm-RN-CSk" secondAttribute="trailing" constant="-8" id="EsJ-2Z-vI1"/>
+                    <constraint firstItem="m1R-tR-Uaw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="89" id="FSU-VT-TmE"/>
+                    <constraint firstItem="3Nm-RN-CSk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="LPq-zE-bAX"/>
+                    <constraint firstItem="pbS-hf-32K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="PSc-Fd-KR5"/>
+                    <constraint firstItem="fLP-aM-1bS" firstAttribute="leading" secondItem="pbS-hf-32K" secondAttribute="trailing" constant="6" id="ViZ-zl-xLm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pbS-hf-32K" secondAttribute="bottom" constant="-8" id="X5f-ED-ml7"/>
+                    <constraint firstItem="m1R-tR-Uaw" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-27" id="ZJx-CT-dzH"/>
+                    <constraint firstItem="3Nm-RN-CSk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="agQ-7i-Tlh"/>
+                    <constraint firstItem="fLP-aM-1bS" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-27" id="c0U-p5-vBs"/>
+                    <constraint firstItem="m1R-tR-Uaw" firstAttribute="top" secondItem="fLP-aM-1bS" secondAttribute="bottom" constant="3" id="d7i-dH-8Dg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3Nm-RN-CSk" secondAttribute="bottom" constant="-8" id="ibZ-bA-XQf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="emailLabel" destination="m1R-tR-Uaw" id="1tc-G6-v9p"/>
+                <outlet property="headerView" destination="pbS-hf-32K" id="7eY-Pg-ziN"/>
+                <outlet property="nameLabel" destination="fLP-aM-1bS" id="Egz-9m-qYT"/>
+                <outlet property="profileImage" destination="4SN-kO-84W" id="kUt-Ji-MnO"/>
+                <outlet property="view" destination="H2p-sc-9uM" id="sUP-hM-6l2"/>
+            </connections>
+            <point key="canvasLocation" x="215" y="477"/>
+        </tableViewCell>
+    </objects>
+</document>
